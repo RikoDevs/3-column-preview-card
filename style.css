@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    width: 100%;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 100%;
+    padding: 2rem;
+}
+
+h1 {
+    padding-top: 1.5rem;
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+
+.box-1 {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 3rem;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.box-2 {
+    padding: 3rem;
+    background-color: hsl(184, 100%, 22%);
+    
+}
+
+.box-3 {
+    
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        padding: 3rem;
+        background-color: hsl(179, 100%, 13%);
+    
+}
+
+p {
+    padding-top: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+button {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    border-radius: 2rem;
+    font-size: 15px;
+    border-color: white;
+    box-sizing: border-box;
+}
+
+.button-1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.button-2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.button-3 {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and  (min-width: 1440px) {
+
+    .box {
+        display: flex;
+        padding-top: 15rem;
+        width: 45%;
+        height: 80vh;
+    }
+
+    .box-1 {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.5rem;
+        
+    }
+
+    
+    .box-3 {
+        border-top-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+       
+    }
+
+    button {
+        margin-top: 7rem;
+        box-sizing: border-box;
+    }
+}
