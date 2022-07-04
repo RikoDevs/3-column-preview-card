@@ -1,110 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
 }
 
 body {
-    background-color: hsl(0, 0%, 95%);
-    display: flex;
-    width: 100%;
+  background-color: hsl(0, 0%, 95%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
 }
+
 .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
 }
+
 
 .box {
-    width: 100%;
-    padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 12px;
+  margin: 2rem;
+  overflow: hidden;
 }
 
-h1 {
-    padding-top: 1.5rem;
-    font-family: 'Big Shoulders Display', sans-serif;
-    color: white;
-    font-size: 40px;
-}
-
-
-.box-1 {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    padding: 3rem;
-    background-color: hsl(31, 77%, 52%);
-}
-
-.box-2 {
-    padding: 3rem;
-    background-color: hsl(184, 100%, 22%);
-    
-}
-
-.box-3 {
-    
-        border-bottom-right-radius: 0.5rem;
-        border-bottom-left-radius: 0.5rem;
-        padding: 3rem;
-        background-color: hsl(179, 100%, 13%);
-    
+h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-size: 30px;
+  padding-top: 20px;
 }
 
 p {
-    padding-top: 1.5rem;
-    color: hsla(0, 0%, 100%, 0.75);
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
+  padding-top: 2rem;
+  color: white;
+}
+.box1 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 40px;
 }
 
-button {
-    padding: 1rem;
-    margin-top: 1.5rem;
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 700;
-    border-radius: 2rem;
-    font-size: 15px;
-    border-color: white;
-    box-sizing: border-box;
+.box2 {
+  background-color: hsl(184, 100%, 22%);
+  padding: 40px;
 }
 
-.button-1 {
-    color: hsl(31, 77%, 52%);
+.box3 {
+  padding: 40px;
+  background-color: hsl(179, 100%, 13%);
 }
 
-.button-2 {
-    color: hsl(184, 100%, 22%);
+a {
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 13px 27px;
+  margin-top: 60px;
+  border-radius: 26px;
+  display: inline-block;
+  border: 2px solid hsl(0, 0%, 95%);
+  transition: all .4s ease-in-out;
 }
 
-.button-3 {
-    color: hsl(179, 100%, 13%);
+.box1 a {
+  color: hsl(31, 77%, 52%);
 }
 
-@media screen and  (min-width: 1440px) {
+.box2 a {
+  color: hsl(184, 100%, 22%);
+}
 
-    .box {
-        display: flex;
-        padding-top: 15rem;
-        width: 45%;
-        height: 80vh;
-    }
+.box3 a {
+  color: hsl(179, 100%, 13%);
+}
 
-    .box-1 {
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 0.5rem;
-        
-    }
+a:hover {
+  color: hsl(0, 0%, 95%);
+  background: transparent;
+}
 
-    
-    .box-3 {
-        border-top-right-radius: 0.5rem;
-        border-bottom-left-radius: 0;
-       
-    }
+@media screen and (max-width: 768px) {
+  .box {
+    grid-template-columns: 1fr;
+  }
+}
 
-    button {
-        margin-top: 7rem;
-        box-sizing: border-box;
-    }
+@media screen and (max-width: 425px) {
+  .box {
+    margin: 2rem .5rem;
+  }
 }
